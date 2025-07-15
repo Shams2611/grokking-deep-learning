@@ -1,0 +1,16 @@
+# batch vs stochastic
+
+print("STOCHASTIC (SGD):")
+print("  + noisy updates help escape local minima")
+print("  + can start learning immediately")
+print("  - slow on big datasets (many updates)")
+print()
+print("BATCH:")
+print("  + stable, smooth convergence")
+print("  + vectorizable (fast on GPU)")
+print("  - needs all data in memory")
+print("  - can get stuck in local minima")
+print()
+print("MINI-BATCH (best of both):")
+print("  use small batches (32, 64, 128)")
+print("  this is what everyone actually uses")
