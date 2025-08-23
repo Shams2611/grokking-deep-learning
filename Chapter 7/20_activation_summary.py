@@ -1,0 +1,30 @@
+# activation functions summary
+
+import numpy as np
+
+def relu(x): return np.maximum(0, x)
+def sigmoid(x): return 1 / (1 + np.exp(-x))
+def tanh(x): return np.tanh(x)
+def leaky_relu(x, a=0.01): return np.where(x > 0, x, a * x)
+
+print("=" * 50)
+print("ACTIVATION FUNCTIONS SUMMARY")
+print("=" * 50)
+print()
+print("ReLU: max(0, x)")
+print("  + fast, no vanishing gradient")
+print("  - dead neurons possible")
+print()
+print("Leaky ReLU: x if x>0 else 0.01*x")
+print("  + fixes dead neurons")
+print("  - extra hyperparameter")
+print()
+print("Sigmoid: 1/(1+e^-x)")
+print("  + outputs 0-1 (probabilities)")
+print("  - vanishing gradient, slow")
+print()
+print("Tanh: (e^x - e^-x)/(e^x + e^-x)")
+print("  + zero-centered")
+print("  - still has vanishing gradient")
+print()
+print("Modern default: ReLU for hidden, task-specific for output")
