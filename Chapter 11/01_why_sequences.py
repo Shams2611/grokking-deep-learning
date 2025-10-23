@@ -1,0 +1,21 @@
+# why do we need special networks for sequences?
+# order matters!
+
+print("WHY SEQUENCES NEED SPECIAL TREATMENT")
+print()
+print("feedforward networks: fixed input size, no memory")
+print()
+print("but sequences have:")
+print("  - variable length")
+print("  - order matters")
+print("  - context from past")
+print()
+print("examples:")
+print('  "dog bites man" vs "man bites dog"')
+print("  predicting next word needs previous words")
+print("  stock prices depend on history")
+print()
+print("solution: Recurrent Neural Networks (RNNs)")
+print("  - process one element at a time")
+print("  - maintain hidden state (memory)")
+print("  - same weights for each step")
