@@ -1,0 +1,21 @@
+# how do we represent words for neural networks?
+# networks need numbers, not text
+
+print("REPRESENTING WORDS")
+print()
+print("neural networks need numeric input")
+print("but text is... text")
+print()
+print("options:")
+print("  1. one-hot encoding (sparse)")
+print("  2. word embeddings (dense)")
+print()
+print('example vocabulary: ["cat", "dog", "bird", "fish"]')
+print()
+print("one-hot 'cat': [1, 0, 0, 0]")
+print("one-hot 'dog': [0, 1, 0, 0]")
+print()
+print("problems with one-hot:")
+print("  - vectors are huge (vocab size)")
+print("  - no similarity info (cat ≠ dog equally)")
+print("  - sparse and inefficient")
